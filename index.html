@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled value="0">
+        <div class="button-container">
+            <button class="button memory" onclick="clearMemory()">MC</button>
+            <button class="button memory" onclick="recallMemory()">MR</button>
+            <button class="button memory" onclick="addToMemory()">M+</button>
+            <button class="button memory" onclick="subtractFromMemory()">M-</button>
+            
+            <button class="button" onclick="appendToDisplay('%')">%</button>
+            <button class="button" onclick="clearEntry()">CE</button>
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="appendToDisplay('√')">√</button>
+            
+            <button class="button" onclick="appendToDisplay('1/x')">1/x</button>
+            <button class="button" onclick="appendToDisplay('x²')">x²</button>
+            <button class="button" onclick="appendToDisplay('²√x')">²√x</button>
+            <button class="button operation" onclick="appendToDisplay('/')">÷</button>
+            
+            <button class="button" onclick="appendToDisplay('7')">7</button>
+            <button class="button" onclick="appendToDisplay('8')">8</button>
+            <button class="button" onclick="appendToDisplay('9')">9</button>
+            <button class="button operation" onclick="appendToDisplay('*')">×</button>
+            
+            <button class="button" onclick="appendToDisplay('4')">4</button>
+            <button class="button" onclick="appendToDisplay('5')">5</button>
+            <button class="button" onclick="appendToDisplay('6')">6</button>
+            <button class="button operation" onclick="appendToDisplay('-')">−</button>
+            
+            <button class="button" onclick="appendToDisplay('1')">1</button>
+            <button class="button" onclick="appendToDisplay('2')">2</button>
+            <button class="button" onclick="appendToDisplay('3')">3</button>
+            <button class="button operation" onclick="appendToDisplay('+')">+</button>
+            
+            <button class="button" onclick="appendToDisplay('+/-')">+/-</button>
+            <button class="button" onclick="appendToDisplay('0')">0</button>
+            <button class="button" onclick="appendToDisplay('.')">.</button>
+            <button class="button equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+    </body> 
+    
+</html>
+
